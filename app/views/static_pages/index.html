@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Template</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <section id="banner">
+      <div class="wrapper">
+        <header>
+          <p id="logo">Lux Designs</p>
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Services</a>
+            <a href="#" class = "button button_secondary button_small">Contact</a>
+          </nav>
+        </header>
+        <div class="content">
+          <h1 class="title animated bounceInDown">We create beautiful products</h1>
+          <h2 class="sub_title">Check out our awesome designs below</h2>
+          <div class="button_wrapper">
+            <a href="#" class="button button_highlight">Learn More</a>
+            <a href="#" class="button button_secondary">Play Video</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class = "cf">
+      <div class="wrapper">
+        <div class="service">
+          <h3>Branding</h3>
+          <p>Desrciption of the branding service</p>
+          <a href="" class = "button button_highlight button_small">Learn More</a>
+        </div>
+        <div class="service middle">
+          <h3>UI/UX Design</h3>
+          <p>Desrciption of the branding service</p>
+          <a href="" class = "button button_highlight button_small">Learn More</a>
+        </div>
+        <div class="service">
+          <h3>Development</h3>
+          <p>Desrciption of the branding service</p>
+          <a href="" class = "button button_highlight button_small">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="past_work">
+      <div class="wrapper">
+        <h2 class="title">Our Work</h2>
+        <%= image_tag("logos.png", :class => "logos") %>
+
+        <ul id="slider_buttons">
+          <a href="#">
+            <li class="current"></li>
+          </a>
+          <a href="#">
+            <li></li>
+          </a>
+          <a href="#">
+            <li></li>
+          </a>
+        </ul>
+
+        <ul id="slider">
+          <li><%=image_tag("serv1.png")%></li>
+          <li><%=image_tag("serv2.png")%></li>
+          <li><%=image_tag("serv3.png")%></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrapper">
+        <h2 class="aniview" data-av-animation="slideInRight">Get in touch</h2>
+        <p class="sub_title">
+          Truffault like one two three four five
+          six seven eight nine ten.
+        </p>
+        <a class="button button_highlight button_large"> Contact Us</a>
+      </div>
+
+
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+
+  </body>
+
+
+
+
+</html>
